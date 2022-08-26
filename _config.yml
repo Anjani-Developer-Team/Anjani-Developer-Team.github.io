@@ -224,27 +224,27 @@ footer:
 hero:
   intro: Software Development & IT Solutions
   right_img: assets/img/header/hdr-3.png
-  service_link: /service/
+  service_link: '/service'
   service_text: Layanan Kami <i class="icofont-long-arrow-right"></i>
   title: Konsultasikan Ide Anda, <br> Dapatkan Solusi Digital Terbaik.
   subtitle: Tim ahli Kami akan membuat ide Anda menjadi nyata untuk menciptakan produk digital sesuai dengan kebutuhan konsumen Anda.
   video_link: https://www.youtube.com/watch?v=ku6dEtynrRI
   video_text: <i class="fas fa-play"></i> <span class="how-txt">How we work</span>
-  title_link: '/work/'
+  title_link: '/work'
   title_text: Explore More <i class="icofont-long-arrow-right"></i>
   image: assets/img/work/6.png
 
 
 # promo ---------------------------------------------------------------------- #
 promo:
-  contact_link: /contact/
+  contact_link: '/contact'
   contact_text: Contact Us
   subtitle: Contact Us
   title: If You Have any Projects or Task for Us. Please Contact Us
 
 # whatwedo ------------------------------------------------------------------- #
 whatwedo:
-  contact_link: /contact/
+  contact_link: '/contact'
   contact_text: Contact Us
   subtitle: What We Do
   title: We Providing Some Special Services <br> To our Clients.
@@ -285,7 +285,7 @@ facts:
 # work ----------------------------------------------------------------------- #
 work:
   description: Recently done case study by our <br> inteligents team
-  more_link: /work/
+  more_link: '/work'
   more_text: Explore More <i class="icofont-long-arrow-right"></i>
   title: Protfolio
 works:
@@ -327,7 +327,7 @@ feedbacks:
 case:
   subtitle: Recently Some Cases Done by Our <br> Agency Team
   title: Case Study
-  work_link: '/work/'
+  work_link: '/work'
   work_text: Explore More <i class="icofont-long-arrow-right"></i>
 cases:
 - image: assets/img/work/7.jpg
