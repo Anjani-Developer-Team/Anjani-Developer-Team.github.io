@@ -1,0 +1,397 @@
+# Global start --------------------------------------------------------------- #
+name                : 'AnjaniDev'
+title               : 'AnjaniDev - Software Development & IT Solutions'
+email               : 'info@anjanidev.com'
+address             : 'Bukit Rahmah Permai Blok C 101, Cilame, Kec. Ngamprah, Kabupaten Bandung Barat, Jawa Barat 40552'
+phone               : '+62 812-8533-3391'
+description: >- # this means to ignore newlines until "baseurl:"
+  AnjaniDev provide a very wide variety of technology and solution
+  to improve quality of your business and services to your costumer.
+baseurl             : "/" # the subpath of your site, e.g. /blog
+url                 : "" #  7277783  the base hostname & protocol for your site, e.g. http://example.com
+locale              : "en_US"
+logo                : assets/img/logo/logo.png
+logo2               : assets/img/logo/logo.png
+
+author:
+  name: AnjaniStudio
+  
+# paginate
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:slug/
+  pages:
+    output: true
+    permalink: /:collection/:slug/
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+  # _pages 
+  - scope:
+      path: "" # we can not defile path /blog/index.html for pagination
+      type: pages
+    values:
+      layout: page
+
+
+timezone: Asia/Jakarta # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+#
+
+disqus_shortname: anvodstudio-demo
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-archives
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-archives
+
+# jekyll archive 
+jekyll-archives:
+  enabled: 
+    - tags
+    - categories
+  layouts:
+    category: category-archive
+    tag: tag-archive
+  permalinks:
+    tag: '/tags/:name/'
+    category: '/categories/:name/'
+
+# Global end ----------------------------------------------------------------- #
+getform_id: 'e5e1f635-da5d-4fc9-9a47-2e10735146f5' # active contact https://getform.io/f/1234
+
+
+# SUBSCRIVE FORM 
+mailchimp:
+  user-id: 'c4e151b63d84a9bac731252a2'
+  list-id: 'ca518aaa14'
+  username: 'jekylltemplate.us5'
+
+# Copyright ------------------------------------------------------------------ #
+copyright_text: Copyright © 2022 All rights reserved to
+company_url: '#'
+
+
+# SEO Related
+google_site_verification : ''
+bing_site_verification   : ''
+yandex_site_verification : ''
+naver_site_verification  : ''
+
+# Social Sharing
+twitter:
+  username               : ''
+facebook:
+  username               : ''
+  app_id                 : ''
+  publisher              : ''
+og_image                 :  '/assets/img/og_image.jpg' # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : '' # Person or Organization (defaults to Person)
+  name                   : '' # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+
+# Analytics
+analytics:
+  provider               : false # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : ''
+    anonymize_ip         : true # true, false (default)
+
+# menus ---------------------------------------------------------------------- #
+menus:
+  - name: Home
+    url: '/'
+  - name: About
+    url: /about/
+  - name: Service
+    url: '/service/'
+  - name: Portfolio
+    url: '/work/'
+  - name: Blog
+    url: '/blog/'
+  - name: Contact
+    url: /contact/
+
+# socials profile ------------------------------------------------------------ #
+socials:
+  - url: '#'
+    icon: 'fab fa-facebook-f'
+  - url: '#'
+    icon: 'fab fa-instagram'
+  - url: '#'
+    icon: 'fab fa-twitter'
+  - url: '#'
+    icon: 'fab fa-youtube'
+
+# about ---------------------------------------------------------------------- #
+about:
+  image: assets/img/about/about-1.png
+  bg_image: assets/img/about/about-3.png
+  title: Keep it S.I.M.P.L.E.
+  subtitle: Our Core Value
+  description: We keep these values in doing our day to day work
+  list: 
+    <li> <i class="icofont-check-circled"></i> Solid in Solving Problem</li>
+    <li> <i class="icofont-check-circled"></i> Initiative to Innovate</li>
+    <li> <i class="icofont-check-circled"></i> Make Progress (Consistently)</li>
+    <li> <i class="icofont-check-circled"></i> Professional</li>
+    <li> <i class="icofont-check-circled"></i> Learn Continuously</li>
+    <li> <i class="icofont-check-circled"></i> End User Focus</li>
+
+# blog ----------------------------------------------------------------------- #
+
+blog:
+  intro: See our Latest &amp; Popular Tips &amp; Tricks <br> from our Experts
+  title: Blog
+
+# footer --------------------------------------------------------------------- #
+footer:
+  address: '
+    <li>Bukit Rahmah Permai Blok C 101, Cilame, Kec. Ngamprah, Kabupaten Bandung Barat, Jawa Barat 40552</li> 
+    <li><a href="#">+62 812-8533-3391</a> </li> 
+    <li><a href="#">info@anjanidev.com</a></li>'
+  bg_image: assets/img/footer/footer-bg.png
+  copyright: "© 2022 All Right Reserved, AnjaniDev"
+  description: 'We are ready to providing outstanding technology to enable your business become more competitive, more efficient and more productive.'
+  logo: assets/img/logo/logo.png
+
+
+# hero ----------------------------------------------------------------------- #
+hero:
+  intro: Software Development & IT Solutions
+  right_img: assets/img/header/hdr-3.png
+  service_link: /service/
+  service_text: Layanan Kami <i class="icofont-long-arrow-right"></i>
+  title: Konsultasikan Ide Anda, <br> Dapatkan Solusi Digital Terbaik.
+  subtitle: Tim ahli Kami akan membuat ide Anda menjadi nyata untuk menciptakan produk digital sesuai dengan kebutuhan konsumen Anda.
+  video_link: https://www.youtube.com/watch?v=ku6dEtynrRI
+  video_text: <i class="fas fa-play"></i> <span class="how-txt">How we work</span>
+  title_link: '/work/'
+  title_text: Explore More <i class="icofont-long-arrow-right"></i>
+  image: assets/img/work/6.png
+
+
+# promo ---------------------------------------------------------------------- #
+promo:
+  contact_link: /contact/
+  contact_text: Contact Us
+  subtitle: Contact Us
+  title: If You Have any Projects or Task for Us. Please Contact Us
+
+# whatwedo ------------------------------------------------------------------- #
+whatwedo:
+  contact_link: /contact/
+  contact_text: Contact Us
+  subtitle: What We Do
+  title: We Providing Some Special Services <br> To our Clients.
+whatwedos:
+- image: assets/img/icons/home-bap.svg
+  title: Business Application Development
+  description: We help you to Develop application for your business, both vertical (industry specific) and horizontal (serve a particular need across all organizations and industries).
+  service_text: Explore Service
+  service_link: '#'
+- image: assets/img/icons/home-pe.svg
+  title: Product Development
+  description: Is there a technology-based product that you want to develop? Trust us to develop it with an end-to-end solution from the design process to its implementation.
+  service_text: Explore Service
+  service_link: '#'
+- image: assets/img/icons/home-wmd.svg
+  title: Web/Mobile App Development
+  description: In today's market, every company needs an effective website. Likewise with mobile-based applications that will help improve your company's image.
+  service_text: Explore Service
+  service_link: '#'
+
+
+# facts ---------------------------------------------------------------------- #
+fact:
+  title: Our Facts
+  subtitle: Great solutions doesn’t need to be complicated
+  description: Our solutions include websites development, mobile applications development, and more. Our solutions are crafted to help your company or business grow even more. Our clients are government, enterprises, overseas and multinational companies.
+facts:
+- image: assets/img/icons/2.png
+  counter: '8'
+  title: Years Experience
+- image: assets/img/icons/1.png
+  counter: '150'
+  title: Project Delivered
+- image: assets/img/icons/feedback.png
+  counter: '50'
+  title: Trusted Clients
+
+# work ----------------------------------------------------------------------- #
+work:
+  description: Recently done case study by our <br> inteligents team
+  more_link: /work/
+  more_text: Explore More <i class="icofont-long-arrow-right"></i>
+  title: Protfolio
+works:
+- image: assets/img/work/1.png
+- image: assets/img/work/2.png
+- image: assets/img/work/3.png
+- image: assets/img/work/4.png
+- image: assets/img/work/5.png
+- image: assets/img/work/6.png
+
+# reviews -------------------------------------------------------------------- #
+reviews:
+- quotes: Lorem Ipsum dolor seat ameat dui too consecteture more be elite. According the agency is best for growing your business what your A best consulting business agency.
+  author: Atardam Steve
+  status: Founder
+- quotes: Lorem Ipsum dolor seat ameat dui too consecteture more be elite. According the agency is best for growing your business what your A best consulting business agency.
+  author: Atardam Steve
+  status: Founder
+
+# feedbacks ------------------------------------------------------------------ #
+feedback:
+  title: 'Testimonials'
+  intro: 'What our clients are saying'
+feedbacks:
+- image: assets/img/review/review-pic.png
+  description: Lorem Ipsum dolor seat ameat dui too consecteture more be elite. According the agency is best for growing your business what your A best consulting business agency.
+  author: Atardam Steve
+  status: Founder
+- image: assets/img/review/review-pic.png
+  description: Lorem Ipsum dolor seat ameat dui too consecteture more be elite. According the agency is best for growing your business what your A best consulting business agency.
+  author: Atardam Steve
+  status: Founder
+- image: assets/img/review/review-pic.png
+  description: Lorem Ipsum dolor seat ameat dui too consecteture more be elite. According the agency is best for growing your business what your A best consulting business agency.
+  author: Atardam Steve
+  status: Founder
+
+# portfolio ------------------------------------------------------------------ #
+case:
+  subtitle: Recently Some Cases Done by Our <br> Agency Team
+  title: Case Study
+  work_link: '/work/'
+  work_text: Explore More <i class="icofont-long-arrow-right"></i>
+cases:
+- image: assets/img/work/7.jpg
+  title: Business / Business Analysis
+  subtitle: Business Ananlysis &amp; Strategy
+  link: '#'
+- image: assets/img/work/8.jpg
+  title: Business / Business Analysis
+  subtitle: Business Ananlysis &amp; Strategy
+  link: '#'
+- image: assets/img/work/9.jpg
+  title: Business / Business Analysis
+  subtitle: Business Ananlysis &amp; Strategy
+  link: '#'
+worksItems:
+- image: '/assets/img/blog/1.jpg'
+  title: ' Business / Business Analysis '
+  subtitle: 'Business Ananlysis & Strategy'
+  link: '#'
+- image: '/assets/img/blog/2.jpg'
+  title: ' Business / Business Analysis '
+  subtitle: 'Business Ananlysis & Strategy'
+  link: '#'
+- image: '/assets/img/blog/3.jpg'
+  title: ' Business / Business Analysis '
+  subtitle: 'Business Ananlysis & Strategy'
+  link: '#'
+- image: '/assets/img/blog/1.jpg'
+  title: ' Business / Business Analysis '
+  subtitle: 'Business Ananlysis & Strategy'
+  link: '#'
+- image: '/assets/img/blog/2.jpg'
+  title: ' Business / Business Analysis '
+  subtitle: 'Business Ananlysis & Strategy'
+  link: '#'
+- image: '/assets/img/blog/3.jpg'
+  title: ' Business / Business Analysis '
+  subtitle: 'Business Ananlysis & Strategy'
+  link: '#'
+
+
+# Team ----------------------------------------------------------------------- #
+teams:
+- image: assets/img/team/1.jpg
+  username: Emiley Philifs
+  profession: Digital marketer
+- image: assets/img/team/2.jpg
+  username: Emiley Philifs
+  profession: Digital marketer
+- image: assets/img/team/3.jpg
+  username: Emiley Philifs
+  profession: Digital marketer
+- image: assets/img/team/4.jpg
+  username: Emiley Philifs
+  profession: Digital marketer
+- image: assets/img/team/5.jpg
+  username: Emiley Philifs
+  profession: Digital marketer
+- image: assets/img/team/6.jpg
+  username: Emiley Philifs
+  profession: Digital marketer
+- image: assets/img/team/7.jpg
+  username: Emiley Philifs
+  profession: Digital marketer
+- image: assets/img/team/8.jpg
+  username: Emiley Philifs
+  profession: Digital marketer

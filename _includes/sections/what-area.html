@@ -1,0 +1,22 @@
+<div class="what-area what-page de-pb">
+	<div class="container">
+		<div class="what-wpr grid-3">
+
+			{%- for wedo in site.whatwedos -%}
+
+			<div class="what-box wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+				<div class="what-icon">
+					<img src="{{ wedo.image  | relative_url }}" alt="thumb">
+				</div>
+				<div class="what-info">
+					<h5>{{ wedo.title }}</h5>
+					<p>{{ wedo.description }}</p>
+					<a href="{{ wedo.service_link }}" class="what-btn">{{ wedo.service_text  }}</a>
+				</div>
+			</div>
+
+			{%- endfor -%}
+
+		</div>
+	</div>
+</div>

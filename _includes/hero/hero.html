@@ -1,0 +1,27 @@
+<div id="home" class="hero-section">
+	<div class="hero-sliderr">
+		<!-- owl Slider Begin -->
+		<div class="hero-single home-2" style="background-image: url('{{'/assets/img/header/header-1.png' | relative_url }}')">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6">
+						<div class="hero-content">
+							<span class="top-title">{{ site.hero.intro }}</span>
+							<h2 data-splitting class="site-title-header wow" data-wow-duration=".1s" data-wow-delay=".4s">{{ site.hero.title }}</h2>
+							<p>{{ site.hero.subtitle }}</p>
+							<div class="hro-btn">
+								<a href="{{ site.hero.service_link }}" class="theme-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">{{ site.hero.service_text }}</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6">
+						<div class="hero-right-pic">
+							<img src="{{ site.hero.right_img | relative_url }}" alt="thumb" class="bounce-animate">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- single Slider End -->
+	</div>
+</div>
