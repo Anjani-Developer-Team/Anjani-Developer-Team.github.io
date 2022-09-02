@@ -5,6 +5,8 @@ email               : 'info@anjanidev.com'
 address             : 'Bukit Rahmah Permai Blok C 101, Cilame, Kec. Ngamprah, Kabupaten Bandung Barat, Jawa Barat 40552'
 phone               : '+62 812-8533-3391'
 description: >- # this means to ignore newlines until "baseurl:"
+  AnjaniDev is a software development company based in Bandung, Indonesia.
+  We build robust and agile software for startups and established enterprise businesses.
   AnjaniDev provide a very wide variety of technology and solution
   to improve quality of your business and services to your costumer.
 baseurl             : "/" # the subpath of your site, e.g. /blog
